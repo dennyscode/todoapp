@@ -1,7 +1,7 @@
 <h1>Create a new Todo</h1>
 
 <% if @todo.errors.any? %>
-<h2>The following errors prevented the todo from being saved</h2>
+  <h2>The following errors prevented the todo from being saved</h2>
   <ul>
     <% @todo.errors.full_messages.each do |msg| %>
     <li><%= msg %></li>
@@ -27,3 +27,4 @@
   </p>
 
 <% end %>
+<%= link_to "Back to Index", todos_path %>

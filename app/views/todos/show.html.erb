@@ -1,3 +1,5 @@
 <h1>Show Todo</h1>
 <p>name: <br><%= @todo.name %></p>
 <p>description: <br><%= @todo.description %></p>
+<%= link_to "Edit a Todo", edit_todo_path(@todo) %>|
+<%= link_to "Back to Index", todos_path %>
